@@ -1,7 +1,7 @@
 
 
 
-<mat-sidenav-container fullscreen>
+<mat-sidenav-container fullscreen id="sidebar">
     <mat-sidenav #sidenav mode="push">
         <mat-toolbar color="primary">
             <span>Menú</span>
@@ -41,7 +41,11 @@
             <mat-icon>dashboard</mat-icon>
         </button>
         <span class="spacer"></span>
-        <button mat-button>
+
+        <span>{{ auth.usuario }}</span>
+
+        <button mat-button
+                (click)="logout()">
             Logout
         </button>
     </mat-toolbar>

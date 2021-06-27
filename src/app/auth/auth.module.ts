@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { AuthRountingModule } from './auth-rounting.module';
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -14,7 +15,8 @@ import { AuthRountingModule } from './auth-rounting.module';
   ],
   imports: [
     CommonModule,
-    AuthRountingModule
+    AuthRountingModule,
+    MaterialModule
   ]
 })
 export class AuthModule { }
